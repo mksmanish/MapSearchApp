@@ -3,7 +3,7 @@
   1)Enter the required location in the searchbar.<br>
   2)It will print the long and lat with annonation on the map.<br>
    ```
-          func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
        
         let searchValue = MKLocalSearch.Request()
         searchValue.naturalLanguageQuery = searchCountry.text
@@ -15,7 +15,7 @@
                 // if entered text is wrong
                 print(error?.localizedDescription ?? "")
             }else{
-                
+                // if enetered text is vaild
                 let lat = response?.boundingRegion.center.latitude
                 let long = response?.boundingRegion.center.longitude
                 print("latitude= \(lat),longitude=\(long)")
@@ -35,8 +35,8 @@
         }
         
     }
-    ```
-<br>   
+   ```
+<br>  
 <img src = "https://github.com/mksmanish/MapSearchApp/blob/main/Screen/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202021-08-24%20at%2017.48.34.png" width="200" height="400" ><br>    
     
   
