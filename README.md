@@ -1,7 +1,8 @@
 # MapSearchApp
   This contains a single page with search and mapkit ,search the searched loaction on map.<br>
   1)Enter the required location in the searchbar.<br>
-  2)It will print the long and lat with annonation on the map.<br>
+  2)It will print the long and lat in console.<br>
+  3)with annonation on the map.<br>
    ```
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
        
